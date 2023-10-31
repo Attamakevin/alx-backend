@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+"""A simple flask app
+"""
 from flask import Flask, render_template
 app = Flask(__name__) 
 
@@ -6,4 +9,4 @@ def index():
     return render_template("index.html")
 
 if __name__=="__main__":
-    Flask.run('0.0.0.0')
+    app.run('0.0.0.0')
